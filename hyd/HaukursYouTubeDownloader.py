@@ -72,7 +72,7 @@ def main():
         global mp3IsClicked
         try:
             fixedtitle = YouTube(link).title
-            unwanted_chars = ".$'%-"
+            unwanted_chars = ".$'%"
             for char in unwanted_chars:
                 fixedtitle = fixedtitle.replace(char, "")
             start_time = time()
