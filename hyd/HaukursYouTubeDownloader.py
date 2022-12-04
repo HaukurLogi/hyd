@@ -82,6 +82,7 @@ def main():
                     video = VideoFileClip(f"{path}/{fixedtitle}.mp4")
                     os.remove(f"{path}/{fixedtitle}.mp4")
                     video.audio.write_audiofile(f"{path}/{fixedtitle}.mp3")
+                    mp3IsClicked = False
             end_time = time()
             popup = Tk()
             popup.title("Download Success!")
