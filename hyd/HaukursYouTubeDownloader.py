@@ -9,7 +9,7 @@ def main():
     mp3IsClicked = False
 
     window = Tk()
-    path = os.path.join(os.path.join(os.environ["HOME"]), 'YoutubeDownloads') # Make path
+    path = os.path.join(os.path.join(os.environ["HOME"]), 'hydownloads') # Make path
     os.makedirs(path, exist_ok=True) # Create folder if it doesn't exist already
 
     # The window itself
@@ -101,10 +101,6 @@ def main():
             errorLabel.place(relx=0.5, rely=0.25, anchor=CENTER)
             error.mainloop()
             
-
-
-        
-
     window.mainloop()
 if __name__ == '__main__':
     main()
