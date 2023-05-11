@@ -97,7 +97,7 @@ def main():
             error.geometry("350x125")
             error.resizable(False, False)
             error.configure(bg="#222222")
-            errorLabel = Label(error, text="Download Failed :/ \n Please check your internet connection.",  fg="#EDEDED", bg="#222222")
+            errorLabel = Label(error, text="Download Failed :/ \n Please check your internet connection \n Maybe try updating your pip packages.",  fg="#EDEDED", bg="#222222")
             errorLabel.place(relx=0.5, rely=0.25, anchor=CENTER)
             error.mainloop()
             
