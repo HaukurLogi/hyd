@@ -51,6 +51,7 @@ def main():
                 activebackground="#750000",
                 command=lambda: download(link.get(), True))
 
+
     # Window attribute locations and dimensions
     linkInputBox.place(relx=0.5, rely=0.45, anchor=CENTER)
     likeTextLabel.place(relx=0.87, rely=0.45, anchor=CENTER)
@@ -79,7 +80,7 @@ def main():
                 video.audio.write_audiofile(f"{path}/{fixedTitle}.mp3")
                 mp3IsClicked = False  
             endTime = time()
-            print(f"Download success! Final Time was {endTime-startTime,3}")        
+            print(f"Download success! Final Time was {round(endTime-startTime,3)} seconds ")        
             popup = Tk()
             popup.title("Download Success!")
             popup.geometry("350x125")
